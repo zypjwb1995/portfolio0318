@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>标题跑马灯12345678910</title>
+</head>
+<body>
+    <script>
+        // console.log(document.title);
+        // 每隔0.5s，让title最后一个文字放到title最前面
+        // 1s = 1000ms
+        setInterval(function(){
+            // 让title最后一个文字放到title最前面去。
+            // 使用字符数组的办法
+            // 数组有： pop方法 可以从数组的最后位置弹出一个元素。
+                    // unshift方法可以从数组的头部添加元素。
+
+            // 将数组转化为字符数组。
+            var tArray = document.title.split("");
+
+            // 让字符数组的最后一个元素出数组
+            var last = tArray.pop();
+
+            // 把最后一个元素插入到数组的开头。
+            tArray.unshift(last);
+
+            // 把字符数组转为字符串
+            var newTitle = tArray.join("");
+
+            document.title = newTitle;
+            // 把新标题改到浏览器上去。
+            // console.log(tArray);
+            // console.log(last);
+
+        },500); 
+    </script>
+</body>
+</html>
