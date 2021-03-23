@@ -44,23 +44,39 @@
             <div class="user-nav">
                 <ul class="clearfix">
                     <!-- 消息框 -->
-                    <li class="msg-wrap">
+                    <li class="msg-wrap user-nav-item">
                         <a href="#" class="msg">
-                            <span class="msg-num">1</span>
+                            <span class="msg-num">10</span>
                         </a>
                     </li>
 
                     <!-- 用户头像和用户名 -->
-                    <li class="user">
+                    <li class="user user-nav-item">
                         <a href="#">
                             <img src="./img/a2.jpg" class="avatar" alt="이광수 프로필사진" title="프로필사진">
                         </a>
-                        <a href="#" class="username">이광수</a>
-                        <i class="triangle-down"></i>
+                        <div href="#" class="username">이광수
+                            <i class="triangle-down icon"></i>
+                            <ul class="user-menu-cover triangle-up-s">
+                                <li><a href="#">내정보</a></li>
+                                <li><a href="#">내강의실</a></li>
+                                <li><a href="#">장바구니</a></li>
+                                <li><a href="#">로그아웃</a></li>
+                            </ul>
+                        </div>
+
                     </li>
 
                     <!-- 选择教师端 -->
-                    <li><a href="#">교사<i class="triangle-down"></i></a></li>
+                    <li class="user-nav-item identity">
+                        <div  class="identityname">교사
+                            <i class="triangle-down icon"></i>
+                            <ul class="identity-menu-cover triangle-up-s">
+                                <li><a href="#">교사</a></li>
+                                <li><a href="#">학생</a></li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>

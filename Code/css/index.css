@@ -93,23 +93,109 @@ a {
 
 /* 搜索框区域 */
 
+/* 用户导航区域 */
 .header .top-nav .user-nav {
     padding-top: 5px;
 }
-.header .user-nav li {
-    float: left;
+.header .user-nav .user-nav-item {
+    /* float: left; */
+    display: inline-block;
     height: 42px;
     line-height: 42px;
+    margin: 0 11px 0 14px;
 }
+/* 设置头像 */
 .header .user-nav .avatar {
     height: 42px;width: 42px;
     border-radius: 50%;
+    border: 1px solid #3598db;
+}
+.header .user-nav .username {
+    display: inline-block;
 }
 
+/* 设置弹出用户菜单 */
+.header .user-nav .user {
+    position: relative;
+}
+.header .user-nav .user-menu-cover {
+    position: absolute;
+    left: 0px;
+    top: 40px;
+    display: none;
+}
+.header .user-nav .username:hover .user-menu-cover {
+    display: block;
+}
+.header .user-nav .user-menu-cover li {
+    display: block;
+    border: 1px solid #f1f1f1;
+    width: 124px;
+    height: 40px;
+    text-align: center;
+}
+.header .user-nav .user-menu-cover li:hover {
+    background-color: #cecece;
+}
+/* 设置弹出身份菜单 */
+.header .user-nav .identity {
+    position: relative;
+}
+.header .user-nav .identity-menu-cover {
+    position: absolute;
+    left: -40px;
+    top: 40px;
+    display: none;
+}
+.header .user-nav .identityname:hover .identity-menu-cover {
+    display: block;
+}
+.header .user-nav .identity-menu-cover li {
+    display: block;
+    border: 1px solid #f1f1f1;
+    width: 124px;
+    height: 40px;
+    text-align: center;
+}
+.header .user-nav .identity-menu-cover li:hover {
+    background-color: #cecece;
+}
+
+.header .user-nav .msg-wrap {
+    position: relative;
+    top: 8px;
+    height: 34px;
+    width: 40px;
+    background: url('../img/sprite-msg.png') no-repeat left top;
+}
+/* 消息数字 */
+.header .user-nav .msg-wrap .msg {
+    position: relative;
+    top: -18px;
+    left: 15px;
+    display: inline-block;
+    width: 34px;
+    height: 40px;
+    line-height: 16px;
+    padding-left: 4px;
+    background: url('../img/sprite-msg.png') no-repeat left bottom;
+}
+.header .user-nav .msg-num {
+    color: #fff;
+    font-size: 10px;
+}
+.header .user-nav i.icon {
+    display: inline-block;
+    float: right;
+    margin: 17px 0 0 7px;
+}
+
+/* 顶部区域 */
 .header .site-nav-wrap {
     margin: 0 auto;
     height: 60px;
     width: 1190px;
+    border: 3px solid #ccc;
 }
 
 

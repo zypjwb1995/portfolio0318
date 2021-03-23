@@ -1,10 +1,17 @@
-var internalID = setInterval(function() {
+var internalID = setInterval(function(){
 
-    var oldTitle = document.title;
+    var tArray = document.title.split("");
 
-    var lastChar = oldTitle.slice(oldTitle.length - 1);
+    var firstChar = tArray.shift();
 
-    var beforeStr = oldTitle.slice(0, oldTitle.length - 1);
-    
-    document.title = lastChar + beforeStr;
-}, 500);
+    tArray.push(firstChar);
+
+    var newTitle = tArray.join("");
+
+    document.title = newTitle;
+
+},500); 
+
+setTimeout(function(){
+    clearInterval(internalID)
+},7000); 
