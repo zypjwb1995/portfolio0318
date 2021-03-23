@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+body {
+    color: #666;
+    font-size: 12px;
+}
+a {
+    color: #666;
+}
+
+.header {}
+
+.header .top-nav {
+    margin: 0 auto;
+    width: 1190px;
+    height: 74px;
+    padding-top: 24px;
+    /* border: 1px solid #000; */
+}
+
+.header .top-nav .logo {
+    float: left;
+}
+.top-nav .logo h1 {
+    position: absolute;
+    text-indent: -9999px;
+}
+
+.header .top-nav .user-nav {
+    float: right;
+}
+/* 搜索框 */
+.header .top-nav .search {
+    margin: 0 265px 0 357px;
+    padding-top: 10px;
+    line-height: 30px;
+    position: relative;
+}
+.header .search .cursor-sel {
+    position: relative;
+    display: inline-block;
+    width: 66px;height: 30px;
+    /* line-height: 30px;  行高可以继承*/
+    text-align: center;
+    border: 1px solid #e0e0e0;
+}
+/* 搜索文本框 */
+.header .search input {
+    display: inline-block;
+    width: 400px;height: 30px;
+    line-height: 30px;
+    padding-left: 1em;
+    text-align: left;
+    border: 1px solid #e0e0e0;
+    /* margin-left: -4px; */
+}
+.search .cursor-sel, 
+.search input {
+    float: left;
+}
+/* 下拉三角形 */
+.header .search .icon-sel {
+    float: right;
+    margin: 12px 6px 0 0;
+}
+/* 设置弹出的小窗 */
+.header .search .course-menu {
+    position: absolute;
+    top: 30px; left: 0px;
+    display: none;
+}
+.header .search .course-menu li {
+    border: 1px solid #e0e0e0;
+    width: 66px;
+}
+.header .search .cursor-sel:hover .course-menu {
+    display: block;
+}
+.header .search .cursor-sel .course-menu li:hover {
+    background-color: #ccc;
+}
+
+/* 设置放大镜的样式 */
+.header .search .icon-search {
+    position: absolute;
+    top: 15px;
+    left: 450px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url(../img/search.gif) no-repeat;
+}
+
+/* 搜索框区域 */
+
+.header .top-nav .user-nav {
+    padding-top: 5px;
+}
+.header .user-nav li {
+    float: left;
+    height: 42px;
+    line-height: 42px;
+}
+.header .user-nav .avatar {
+    height: 42px;width: 42px;
+    border-radius: 50%;
+}
+
+.header .site-nav-wrap {
+    margin: 0 auto;
+    height: 60px;
+    width: 1190px;
+}
+
+
+/* 顶部导航栏 */

@@ -1,5 +1,24 @@
 @charset "utf8";
 
 /* 
-* 一般情况下，所有页面的根样式都会写在这里 / common.css
+ 一般情况下，所有页面的根样式都会写在这里 / common.css
 */
+.triangle-down {
+    border: 5px solid #666;
+    border-style: solid dashed dashed;
+    border-color: #666 transparent transparent;
+    width: 0;
+    height: 0;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: " ";
+    display: table;
+}
+.clear::after {
+    clear: both;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
