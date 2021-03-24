@@ -14,4 +14,4 @@ var internalID = setInterval(function(){
 
 setTimeout(function(){
     clearInterval(internalID)
-},7000); 
+},13500); 

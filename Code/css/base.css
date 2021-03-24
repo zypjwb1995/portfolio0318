@@ -44,3 +44,8 @@
     line-height: 0;
     visibility: hidden;
 }
+
+/* 弹出的层的基类 */
+.cover {
+    background-color: #fff;
+}

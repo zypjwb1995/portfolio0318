@@ -3,17 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/base.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/index.css">
     <title>하공대출판사 온라인 교육 사이트</title>
 </head>
 
 <body>
     <!-- website header area -->
-    <div class="header">
+    <div class="h-header">
         <!-- 顶部的用户导航区域 -->
         <div class="top-nav">
             <div class="logo">
@@ -31,7 +31,7 @@
                         <span>과정</span>
                         <i class="triangle-down icon-sel"></i>
                     </a>
-                    <ul class="course-menu">
+                    <ul class="course-menu cover">
                         <li><a href="#">과정</a></li>
                         <li><a href="#">교재</a></li>
                     </ul>
@@ -57,7 +57,7 @@
                         </a>
                         <div href="#" class="username">이광수
                             <i class="triangle-down icon"></i>
-                            <ul class="user-menu-cover triangle-up-s">
+                            <ul class="user-menu-cover triangle-up-s cover">
                                 <li><a href="#">내정보</a></li>
                                 <li><a href="#">내강의실</a></li>
                                 <li><a href="#">장바구니</a></li>
@@ -71,7 +71,7 @@
                     <li class="user-nav-item identity">
                         <div  class="identityname">교사
                             <i class="triangle-down icon"></i>
-                            <ul class="identity-menu-cover triangle-up-s">
+                            <ul class=" identity-menu-cover triangle-up-s cover">
                                 <li><a href="#">교사</a></li>
                                 <li><a href="#">학생</a></li>
                             </ul>
@@ -86,27 +86,239 @@
     <div class="site-nav">
         <div class="site-nav-wrap">
             <!-- 网站主导航区域 -->
-            <div class="main-nav"></div>
+            <div class="main-nav">
+                <ul class="main-nav-wrap">
+                    <li class="menu-item"><a href="#" class="cur">홈페이지</a></li>
+                    <li class="menu-item"><a href="#">과정</a></li>
+                    <li class="menu-item"><a href="#">교재</a></li>
+                    <li class="menu-item">|</li>
+                    <li class="menu-item"><a href="#">내강의실</a></li>
+                </ul>
+            </div>
 
             <!-- 导航条右侧链接 -->
-            <div class="nav-lin"></div>
+            <div class="nav-aside">
+                <ul class="nav-aside-list">
+                    <li><a href="#">수강후기</a></li>
+                    <li> | </li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bg-red-wrap">
+            <div class="bg-red"></div>
         </div>
     </div>
 
 
     <!-- website banner area -->
-    <div class="banner">
-
+    <div class="h-banner">
+        <a href="#"><img class="banner-img" src="./img/banner.png" alt="banner"></a>
+        <div class="slide-bar">
+            <ul class="slide-bar-list">
+                <li class="slide-btn">
+                    <a href="#" class="cur-banner"></a>
+                </li>
+                <li class="slide-btn">
+                    <a href="#"></a>
+                </li>
+                <li class="slide-btn">
+                    <a href="#"></a>
+                </li>
+            </ul>
+        </div>
     </div>
 
     <!-- website main area -->
-    <div class="main">
-
+    <div class="h-main">
+        <!-- course -->
+        <div class="course-list p-module">
+            <div class="p-module-head clearfix">
+                <div class="p-module-title"><h3>추천과정</h3></div>
+                <a href="#" class="p-module-more">More...</a>
+            </div>
+            <div class="p-module-body clearfix">
+                <ul class="p-list">
+                    <li class="p-list-item">
+                        <div class="p-img">
+                            <img src="./img/p1.jpg" alt="">
+                        </div>
+                        <div class="p-name">
+                            <a href="#">HTML5+CSS3 기초</a>
+                        </div>
+                    </li>
+                    <li class="p-list-item">
+                        <div class="p-img">
+                            <img src="./img/p2.jpg" alt="">
+                        </div>
+                        <div class="p-name">
+                            <a href="#">화학</a>
+                        </div>
+                    </li>
+                    <li class="p-list-item">
+                        <div class="p-img">
+                            <img src="./img/p3.jpg" alt="">
+                        </div>
+                        <div class="p-name">
+                            <a href="#">HTML, CSS 기초와 반응형 웹 디자인</a>
+                        </div>
+                    </li>
+                    <li class="p-list-item">
+                        <div class="p-img">
+                            <img src="./img/p4.jpg" alt="">
+                        </div>
+                        <div class="p-name">
+                            <a href="#">수학</a>
+                        </div>
+                    </li>
+                    <li class="p-list-item">
+                        <div class="p-img">
+                            <img src="./img/p5.jpg" alt="">
+                        </div>
+                        <div class="p-name">
+                            <a href="#">리액트 기초</a>
+                        </div>
+                    </li>
+                    <li class="p-list-item">
+                        <div class="p-img">
+                            <img src="./img/p5.jpg" alt="">
+                        </div>
+                        <div class="p-name">
+                            <a href="#">리액트 기초</a>
+                        </div>
+                    </li>
+                    <li class="p-list-item">
+                        <div class="p-img">
+                            <img src="./img/p1.jpg" alt="">
+                        </div>
+                        <div class="p-name">
+                            <a href="#">HTML5+CSS3 기초</a>
+                        </div>
+                    </li>
+                    <li class="p-list-item">
+                        <div class="p-img">
+                            <img src="./img/p2.jpg" alt="">
+                        </div>
+                        <div class="p-name">
+                            <a href="#">화학</a>
+                        </div>
+                    </li>
+                    <li class="p-list-item">
+                        <div class="p-img">
+                            <img src="./img/p3.jpg" alt="">
+                        </div>
+                        <div class="p-name">
+                            <a href="#">HTML, CSS 기초와 반응형 웹 디자인</a>
+                        </div>
+                    </li>
+                    <li class="p-list-item">
+                        <div class="p-img">
+                            <img src="./img/p4.jpg" alt="">
+                        </div>
+                        <div class="p-name">
+                            <a href="#">수학</a>
+                        </div>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+        <!-- book -->
+        <div class="book-list p-module">
+            <div class="p-module-head clearfix">
+                <div class="p-module-title"><h3>추천교재</h3></div>
+                <a href="#" class="p-module-more">More...</a>
+            </div>
+            <div class="p-module-body clearfix">
+                <ul class="p-list">
+                    <li class="p-list-item">
+                        <div class="p-img">
+                            <img src="./img/p1.jpg" alt="">
+                        </div>
+                        <div class="p-name">
+                            <a href="#">HTML5+CSS3 기초</a>
+                        </div>
+                    </li>
+                    <li class="p-list-item">
+                        <div class="p-img">
+                            <img src="./img/p2.jpg" alt="">
+                        </div>
+                        <div class="p-name">
+                            <a href="#">화학</a>
+                        </div>
+                    </li>
+                    <li class="p-list-item">
+                        <div class="p-img">
+                            <img src="./img/p3.jpg" alt="">
+                        </div>
+                        <div class="p-name">
+                            <a href="#">HTML, CSS 기초와 반응형 웹 디자인</a>
+                        </div>
+                    </li>
+                    <li class="p-list-item">
+                        <div class="p-img">
+                            <img src="./img/p4.jpg" alt="">
+                        </div>
+                        <div class="p-name">
+                            <a href="#">수학</a>
+                        </div>
+                    </li>
+                    <li class="p-list-item">
+                        <div class="p-img">
+                            <img src="./img/p5.jpg" alt="">
+                        </div>
+                        <div class="p-name">
+                            <a href="#">리액트 기초</a>
+                        </div>
+                    </li>
+                    <li class="p-list-item">
+                        <div class="p-img">
+                            <img src="./img/p5.jpg" alt="">
+                        </div>
+                        <div class="p-name">
+                            <a href="#">리액트 기초</a>
+                        </div>
+                    </li>
+                    <li class="p-list-item">
+                        <div class="p-img">
+                            <img src="./img/p1.jpg" alt="">
+                        </div>
+                        <div class="p-name">
+                            <a href="#">HTML5+CSS3 기초</a>
+                        </div>
+                    </li>
+                    <li class="p-list-item">
+                        <div class="p-img">
+                            <img src="./img/p2.jpg" alt="">
+                        </div>
+                        <div class="p-name">
+                            <a href="#">화학</a>
+                        </div>
+                    </li>
+                    <li class="p-list-item">
+                        <div class="p-img">
+                            <img src="./img/p3.jpg" alt="">
+                        </div>
+                        <div class="p-name">
+                            <a href="#">HTML, CSS 기초와 반응형 웹 디자인</a>
+                        </div>
+                    </li>
+                    <li class="p-list-item">
+                        <div class="p-img">
+                            <img src="./img/p4.jpg" alt="">
+                        </div>
+                        <div class="p-name">
+                            <a href="#">수학</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <!-- website footer area -->
-    <div class="footer">
-
+    <div class="h-footer">
+        <p>Copyrignt © 2004-2016 Harbin Institute of Technology Press. All rights reserved. 京ICP备11017824号-7</p>
     </div>
 </body>
 <script src="./js/index.js"></script>

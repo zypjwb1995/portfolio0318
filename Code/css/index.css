@@ -8,9 +8,8 @@ a {
     color: #666;
 }
 
-.header {}
 
-.header .top-nav {
+.h-header .top-nav {
     margin: 0 auto;
     width: 1190px;
     height: 74px;
@@ -18,7 +17,7 @@ a {
     /* border: 1px solid #000; */
 }
 
-.header .top-nav .logo {
+.h-header .top-nav .logo {
     float: left;
 }
 .top-nav .logo h1 {
@@ -26,17 +25,17 @@ a {
     text-indent: -9999px;
 }
 
-.header .top-nav .user-nav {
+.h-header .top-nav .user-nav {
     float: right;
 }
 /* 搜索框 */
-.header .top-nav .search {
+.h-header .top-nav .search {
     margin: 0 265px 0 357px;
     padding-top: 10px;
     line-height: 30px;
     position: relative;
 }
-.header .search .cursor-sel {
+.h-header .search .cursor-sel {
     position: relative;
     display: inline-block;
     width: 66px;height: 30px;
@@ -45,7 +44,7 @@ a {
     border: 1px solid #e0e0e0;
 }
 /* 搜索文本框 */
-.header .search input {
+.h-header .search input {
     display: inline-block;
     width: 400px;height: 30px;
     line-height: 30px;
@@ -59,29 +58,29 @@ a {
     float: left;
 }
 /* 下拉三角形 */
-.header .search .icon-sel {
+.h-header .search .icon-sel {
     float: right;
     margin: 12px 6px 0 0;
 }
 /* 设置弹出的小窗 */
-.header .search .course-menu {
+.h-header .search .course-menu {
     position: absolute;
     top: 30px; left: 0px;
     display: none;
 }
-.header .search .course-menu li {
+.h-header .search .course-menu li {
     border: 1px solid #e0e0e0;
     width: 66px;
 }
-.header .search .cursor-sel:hover .course-menu {
+.h-header .search .cursor-sel:hover .course-menu {
     display: block;
 }
-.header .search .cursor-sel .course-menu li:hover {
+.h-header .search .cursor-sel .course-menu li:hover {
     background-color: #ccc;
 }
 
 /* 设置放大镜的样式 */
-.header .search .icon-search {
+.h-header .search .icon-search {
     position: absolute;
     top: 15px;
     left: 450px;
@@ -94,10 +93,10 @@ a {
 /* 搜索框区域 */
 
 /* 用户导航区域 */
-.header .top-nav .user-nav {
+.h-header .top-nav .user-nav {
     padding-top: 5px;
 }
-.header .user-nav .user-nav-item {
+.h-header .user-nav .user-nav-item {
     /* float: left; */
     display: inline-block;
     height: 42px;
@@ -105,63 +104,65 @@ a {
     margin: 0 11px 0 14px;
 }
 /* 设置头像 */
-.header .user-nav .avatar {
+.h-header .user-nav .avatar {
     height: 42px;width: 42px;
     border-radius: 50%;
     border: 1px solid #3598db;
 }
-.header .user-nav .username {
+.h-header .user-nav .username {
     display: inline-block;
 }
 
 /* 设置弹出用户菜单 */
-.header .user-nav .user {
+.h-header .user-nav .user {
     position: relative;
 }
-.header .user-nav .user-menu-cover {
+.h-header .user-nav .user-menu-cover {
     position: absolute;
     left: 0px;
     top: 40px;
     display: none;
+    z-index: 1000;
 }
-.header .user-nav .username:hover .user-menu-cover {
+.h-header .user-nav .username:hover .user-menu-cover {
     display: block;
 }
-.header .user-nav .user-menu-cover li {
+.h-header .user-nav .user-menu-cover li {
     display: block;
     border: 1px solid #f1f1f1;
     width: 124px;
     height: 40px;
     text-align: center;
 }
-.header .user-nav .user-menu-cover li:hover {
+.h-header .user-nav .user-menu-cover li:hover {
     background-color: #cecece;
 }
 /* 设置弹出身份菜单 */
-.header .user-nav .identity {
+.h-header .user-nav .identity {
     position: relative;
 }
-.header .user-nav .identity-menu-cover {
+.h-header .user-nav .identity-menu-cover {
     position: absolute;
     left: -40px;
     top: 40px;
     display: none;
+    z-index: 1000;
 }
-.header .user-nav .identityname:hover .identity-menu-cover {
+.h-header .user-nav .identityname:hover .identity-menu-cover {
     display: block;
 }
-.header .user-nav .identity-menu-cover li {
+.h-header .user-nav .identity-menu-cover li {
     display: block;
     border: 1px solid #f1f1f1;
     width: 124px;
     height: 40px;
     text-align: center;
 }
-.header .user-nav .identity-menu-cover li:hover {
+.h-header .user-nav .identity-menu-cover li:hover {
     background-color: #cecece;
 }
 
-.header .user-nav .msg-wrap {
+.h-header .user-nav .msg-wrap {
     position: relative;
     top: 8px;
     height: 34px;
@@ -169,7 +170,7 @@ a {
     background: url('../img/sprite-msg.png') no-repeat left top;
 }
 /* 消息数字 */
-.header .user-nav .msg-wrap .msg {
+.h-header .user-nav .msg-wrap .msg {
     position: relative;
     top: -18px;
     left: 15px;
@@ -180,23 +181,177 @@ a {
     padding-left: 4px;
     background: url('../img/sprite-msg.png') no-repeat left bottom;
 }
-.header .user-nav .msg-num {
+.h-header .user-nav .msg-num {
     color: #fff;
     font-size: 10px;
 }
-.header .user-nav i.icon {
+.h-header .user-nav i.icon {
     display: inline-block;
     float: right;
     margin: 17px 0 0 7px;
 }
-
 /* 顶部区域 */
-.header .site-nav-wrap {
+
+/* =================================================================== */
+/* 主导航区 site-nav */
+/* site-nav box */
+.site-nav {
+    background-color: #3598db;
+    font-size: 16px;
+}
+.site-nav .site-nav-wrap {
     margin: 0 auto;
     height: 60px;
     width: 1190px;
-    border: 3px solid #ccc;
+    /* border: 1px solid #ccc; */
+}
+.site-nav li, 
+.site-nav a {
+    color: #fff;
+}
+/* left nav */
+.site-nav .main-nav {
+    float: left;
+    height: 60px;
+    line-height: 60px;
+}
+.site-nav .main-nav .menu-item {
+    float: left;
+    margin-right: 10px;
+}
+.site-nav .menu-item a {
+    text-align: center;
+    display: inline-block;
+    height: 32px;width: 70px;
+    line-height: 32px;
+    border-radius: 3px;
+    padding: 0 22px;
+}
+.site-nav .menu-item a.cur,
+.site-nav .menu-item a:hover {
+    background-color: #2db0f9;
+}
+/* right nav */
+
+.site-nav .nav-aside {
+    background-color: #e7594d;
+    float: right;
+    padding-left: 20px;
+}
+.site-nav .nav-aside li {
+    float: left;
+    line-height: 60px;
+    height: 60px;
+    margin-left: 20px;
+}
+/* bg-right */
+.site-nav .bg-red-wrap {
+    margin-left: 1190px;
+    position: relative;
+}
+.site-nav .bg-red-wrap .bg-red {
+    position: absolute;
+    z-index: 1;
+    right: 0;bottom: 0px;
+    width: 50%;
+    height: 60px;
+    background-color: #e7594d;
+} 
+/* ======================================================================== */
+
+/* banner */
+.h-banner {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+.h-banner .banner-img {
+    width: 100%;
+}
+.h-banner .slide-bar {
+    position: absolute;
+    left: 50%;top: 365px;
+    margin-left: -45px;
+    width: 90px;
+    height: 14px;
+}
+.h-banner .slide-bar .slide-btn {
+    float: left;
+}
+.h-banner .slide-btn a {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url('../img/ico_circle.png') no-repeat -73px 0;
+    margin-right: 15px;
+}
+.h-banner .slide-btn a.cur-banner,
+.h-banner .slide-btn a:hover {
+    background: url('../img/ico_circle.png') no-repeat -15px -22px;
 }
 
+/* ===================================================================== */
 
-/* 顶部导航栏 */
+/* course */
+.h-main .course-list, 
+.h-main .book-list {
+    margin: 0 auto;
+    width: 1190px;
+    padding-top: 40px;
+}
+.h-main .p-module .p-module-head {
+    font-size: 22px;
+    /* line-height: 55px; */
+    height: 22px;
+    color: #1a1a1a;
+}
+.h-main .p-module .p-module-head .p-module-title {
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    padding-left: 18px;
+    border-left: 7px solid #2db0f9 ;
+}
+.h-main .p-module .p-module-more {
+    float: right;
+    line-height: 22px;
+    font-size: 16px;
+    color: #5da7df;
+}
+
+/* 设置课程列表项 */
+.p-module .p-module-body {
+    overflow: hidden;
+}
+.h-main .p-module .p-module-body .p-list-item {
+    padding-top: 30px;
+    margin: 0 14px;
+    font-size: 16px;
+    line-height: 28px;
+    color: #1a1a1a;
+    float: left;
+}
+.h-main .p-module .p-module-body .p-list-item img {
+    height: 180px;
+    width: 207px;
+    border: 1px solid #e1e1e1;
+}
+.p-module .p-module-body .p-list-item .p-name {
+    text-align: center;
+    width: 206px;
+}
+.h-main .p-module .p-module-body .p-list .p-list-item:nth-child(6){
+    clear: both;
+}
+
+/* =================================================================== */
+/* footer */
+.h-footer {
+    background: #373a43;
+    height: 141px;
+    text-align: center;
+    padding-top: 44px;
+    font-size: 16px;
+    color: #fff;
+
+}
